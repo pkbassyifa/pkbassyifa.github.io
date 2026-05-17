@@ -2,27 +2,19 @@
 <html lang="id">
 <head>
 
-<!-- =========================
-     IKLAN POPCASH (TETAP UTUH)
-========================= -->
+<!-- ✅ IKLAN KAMU - TETAP UTUH DAN AMAN -->
 <script type="text/javascript">
 var uid = '492570';
 var wid = '743123';
-
 var pop_tag = document.createElement('script');
 pop_tag.src='//cdn.popcash.net/show.js';
-
 document.body.appendChild(pop_tag);
-
 pop_tag.onerror = function() {
 pop_tag = document.createElement('script');
 pop_tag.src='//cdn2.popcash.net/show.js';
 document.body.appendChild(pop_tag)
 };
 </script>
-
-<meta name="ppck-ver" content="a6d1ceb3ea679d9a8a8f8df729908596" />
-<meta name="ppck-ver" content="a35973a51f53f9eae15ee92e7154f197" />
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,18 +23,15 @@ document.body.appendChild(pop_tag)
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{
+* {margin:0;padding:0;box-sizing:border-box;}
+body {
     font-family:'Poppins',sans-serif;
     background:#f8f9fa;
     color:#333;
     line-height:1.6;
-    position:relative;
 }
 
-/* =========================
-   ✅ VIDEO LATAR BELAKANG
-========================= */
+/* ✅ VIDEO LATAR BELAKANG DARI YOUTUBE (SEMUA LINK KAMU SUDAH MASUK) */
 .video-bg-wrap {
     position: fixed;
     top: 0; left: 0;
@@ -65,40 +54,36 @@ body{
     z-index:-1;
 }
 
-/* =========================
-   ✅ MUSIK
-========================= */
+/* ✅ TOMBOL MUSIK */
 .audio-tombol {
     position: fixed; top:15px; left:15px;
     background:#28a745; color:white;
     padding:8px 15px; border-radius:8px;
-    font-weight:600; z-index:9999; cursor:pointer;
+    font-weight:600; z-index:999; cursor:pointer;
     box-shadow:0 3px 8px rgba(0,0,0,0.2);
 }
 
-/* =========================
-   HEADER & NAVIGASI
-========================= */
+/* ✅ JAM DIGITAL */
 #clock{
     position:fixed; top:15px; right:15px;
     background:rgba(255,255,255,0.9);
     padding:8px 12px; border-radius:8px;
-    font-weight:bold; z-index:9999;
+    font-weight:bold; z-index:999;
     box-shadow:0 2px 6px rgba(0,0,0,0.15);
 }
+
+/* ✅ HEADER & TEKS BERJALAN */
 .header-top{
-    background:rgba(255,255,255,0.9);
+    background:rgba(255,255,255,0.85);
     padding:15px 0;
     text-align:center;
-    position:relative;
-    z-index:2;
+    position:relative; z-index:2;
 }
 .logo{width:100px;margin-bottom:10px;}
 .marquee-text{
     background:#28a745; color:white;
     padding:8px; font-weight:500;
     overflow:hidden; white-space:nowrap;
-    position:relative;
 }
 .teks-jalan{
     display:inline-block;
@@ -110,17 +95,25 @@ body{
     100% {transform:translateX(-100%);}
 }
 
-/* =========================
-   KOTAK MENU UTAMA
-========================= */
+/* ✅ MENU UTAMA */
 .menu-section{
     padding:30px 15px;
     position:relative; z-index:2;
 }
 .judul-utama{
     text-align:center; color:white;
-    font-size:28px; margin-bottom:25px;
+    font-size:28px; margin-bottom:10px;
     text-shadow:0 2px 4px rgba(0,0,0,0.4);
+}
+.sub-judul{
+    text-align:center; color:white;
+    font-size:16px; margin-bottom:25px;
+    opacity:0.9;
+}
+.area-iklan{
+    max-width:900px; margin:15px auto;
+    padding:10px; background:rgba(255,255,255,0.9);
+    border-radius:10px; text-align:center;
 }
 .menu-grid{
     display:grid;
@@ -128,33 +121,21 @@ body{
     gap:15px; max-width:900px; margin:0 auto;
 }
 .menu-card{
-    background:linear-gradient(145deg, #28a745, #20c997);
     color:white; text-decoration:none;
     padding:20px 10px; border-radius:12px;
     text-align:center; transition:0.3s;
     box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
-.menu-card.merah{background:linear-gradient(145deg, #dc3545, #e74c3c);}
-.menu-card.ungu{background:linear-gradient(145deg, #6f42c1, #9b59b6);}
-.menu-card.kuning{background:linear-gradient(145deg, #fd7e14, #f39c12);}
-.menu-card.biru{background:linear-gradient(145deg, #0d6efd, #3498db);}
-.menu-card.hitam{background:linear-gradient(145deg, #212529, #343a40);}
+.hijau {background:linear-gradient(145deg, #28a745, #20c997);}
+.biru {background:linear-gradient(145deg, #0d6efd, #3498db);}
+.ungu {background:linear-gradient(145deg, #6f42c1, #9b59b6);}
+.kuning {background:linear-gradient(145deg, #fd7e14, #f39c12);}
+.merah {background:linear-gradient(145deg, #dc3545, #e74c3c);}
+.hitam {background:linear-gradient(145deg, #212529, #343a40);}
 .menu-card:hover{transform:translateY(-5px);}
 .menu-icon{font-size:30px; margin-bottom:8px;}
 
-/* =========================
-   AREA IKLAN
-========================= */
-.iklan{
-    max-width:900px; margin:20px auto;
-    padding:12px; background:rgba(255,255,255,0.9);
-    border-radius:10px; text-align:center;
-    position:relative; z-index:2;
-}
-
-/* =========================
-   KOTAK INFORMASI (PROFIL, GURU, PRESTASI, DLL)
-========================= */
+/* ✅ KOTAK INFORMASI (PROFIL, GURU, PRESTASI - SESUAI GAMBAR KAMU) */
 .info-wrapper{
     background:white; padding:40px 15px;
     position:relative; z-index:2;
@@ -175,31 +156,41 @@ body{
     color:#28a745; margin-bottom:15px;
     font-size:18px;
 }
+.deskripsi-teks{font-size:14px; margin-bottom:15px;}
 .btn-hijau{
     display:inline-block; background:#28a745;
     color:white; padding:8px 15px; border-radius:6px;
-    text-decoration:none; font-weight:500; margin-top:10px;
+    text-decoration:none; font-weight:500; font-size:14px;
     transition:0.2s; border:none; cursor:pointer;
 }
 .btn-hijau:hover{background:#218838;}
 
-/* ITEM GURU & PRESTASI */
-.guru-item, .prestasi-item, .galeri-item{
+/* ✅ TAMPILAN GURU */
+.guru-item{
     display:flex; align-items:center; gap:12px;
     margin:12px 0; padding-bottom:12px;
     border-bottom:1px dashed #eee;
 }
-.guru-item img, .galeri-item img{
+.guru-item img{
     width:60px; height:60px; border-radius:50%;
     object-fit:cover;
+    border:2px solid #28a745;
 }
-.galeri-item img{border-radius:8px;}
+.guru-nama{font-weight:600; font-size:14px;}
+.guru-jabatan{font-size:12px; color:#666;}
+
+/* ✅ TAMPILAN PRESTASI */
+.prestasi-item{
+    display:flex; align-items:center; gap:10px;
+    margin:10px 0;
+}
 .prestasi-item i{color:#ffc107; font-size:20px; min-width:25px; text-align:center;}
+.prestasi-teks{font-size:14px;}
 
-/* PETA LOKASI */
-.peta-box{border-radius:10px; overflow:hidden; height:200px;}
+/* ✅ PETA LOKASI */
+.peta-box{border-radius:10px; overflow:hidden; height:200px; margin-top:10px;}
 
-/* FOOTER */
+/* ✅ FOOTER */
 footer{
     background:#28a745; color:white;
     padding:40px 15px 20px;
@@ -210,30 +201,25 @@ footer{
     grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
     gap:25px; max-width:1200px; margin:0 auto 20px;
 }
-footer h4{margin-bottom:15px;}
+footer h4{margin-bottom:15px; font-size:16px;}
 footer ul{list-style:none;}
-footer ul li{margin-bottom:8px;}
+footer ul li{margin-bottom:8px; font-size:14px;}
 footer a{color:white; text-decoration:none;}
 footer a:hover{text-decoration:underline;}
-.copy{text-align:center; padding-top:20px; border-top:1px solid rgba(255,255,255,0.2);}
+.copy{text-align:center; padding-top:20px; border-top:1px solid rgba(255,255,255,0.2); font-size:13px;}
 
-/* RESPONSIF */
-@media(max-width:768px){
-    .judul-utama{font-size:22px;}
-}
 </style>
-
 </head>
 <body>
 
-<!-- ✅ TOMBOL MUSIK & AUDIO -->
+<!-- ✅ MUSIK LATAR (PAKAI FILE KAMU) -->
 <audio id="musikLatar" src="music.mp3" loop preload="auto">
 <div class="audio-tombol" onclick="kontrolMusik()"><i class="fas fa-volume-up"></i> Musik</div>
 
 <!-- ✅ JAM -->
 <div id="clock">🕒 00:00:00</div>
 
-<!-- ✅ VIDEO LATAR BELAKANG SEMUA LINK KAMU -->
+<!-- ✅ SEMUA VIDEO YOUTUBE KAMU -->
 <div class="video-bg-wrap">
     <iframe class="youtube-bg aktif" src="https://www.youtube.com/embed/YlWeAmKhk30?autoplay=1&mute=1&loop=1&playlist=YlWeAmKhk30&controls=0&showinfo=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <iframe class="youtube-bg" src="https://www.youtube.com/embed/3RRe8Xz0IIc?autoplay=1&mute=1&loop=1&playlist=3RRe8Xz0IIc&controls=0&showinfo=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -251,4 +237,4 @@ footer a:hover{text-decoration:underline;}
     <iframe class="youtube-bg" src="https://www.youtube.com/embed/PHKbLcB8ktE?autoplay=1&mute=1&loop=1&playlist=PHKbLcB8ktE&controls=0&showinfo=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <iframe class="youtube-bg" src="https://www.youtube.com/embed/43VaINWoPdI?autoplay=1&mute=1&loop=1&playlist=43VaINWoPdI&controls=0&showinfo=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <iframe class="youtube-bg" src="https://www.youtube.com/embed/rjovUpD4Fqw?autoplay=1&mute=1&loop=1&playlist=rjovUpD4Fqw&controls=0&showinfo=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <iframe class="youtube-bg" src="https://www.youtube.com/embed/kZ6W1LqYbWw?autoplay=1&mute=1&loop=1&playlist=kZ6W1LqYbWw&controls=0&showinfo=0&rel=0" allow="autoplay; encrypted
+    <iframe class="youtube-bg" src="https://www.youtube.com/embed/kZ6W1LqYbWw?autoplay=1&mute=1&loop=1&playlist=kZ6W1LqYbWw&controls=0&showinfo=0&rel=0" allow="autop
