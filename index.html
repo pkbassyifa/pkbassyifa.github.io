@@ -72,7 +72,7 @@ body{
     position: fixed; top:15px; left:15px;
     background:#28a745; color:white;
     padding:8px 15px; border-radius:8px;
-    font-weight:600; z-index:999; cursor:pointer;
+    font-weight:600; z-index:9999; cursor:pointer;
     box-shadow:0 3px 8px rgba(0,0,0,0.2);
 }
 
@@ -83,7 +83,7 @@ body{
     position:fixed; top:15px; right:15px;
     background:rgba(255,255,255,0.9);
     padding:8px 12px; border-radius:8px;
-    font-weight:bold; z-index:999;
+    font-weight:bold; z-index:9999;
     box-shadow:0 2px 6px rgba(0,0,0,0.15);
 }
 .header-top{
@@ -97,6 +97,17 @@ body{
 .marquee-text{
     background:#28a745; color:white;
     padding:8px; font-weight:500;
+    overflow:hidden; white-space:nowrap;
+    position:relative;
+}
+.teks-jalan{
+    display:inline-block;
+    animation: jalankan 20s linear infinite;
+    padding-left:100%;
+}
+@keyframes jalankan {
+    0% {transform:translateX(0%);}
+    100% {transform:translateX(-100%);}
 }
 
 /* =========================
@@ -168,7 +179,7 @@ body{
     display:inline-block; background:#28a745;
     color:white; padding:8px 15px; border-radius:6px;
     text-decoration:none; font-weight:500; margin-top:10px;
-    transition:0.2s;
+    transition:0.2s; border:none; cursor:pointer;
 }
 .btn-hijau:hover{background:#218838;}
 
@@ -183,7 +194,7 @@ body{
     object-fit:cover;
 }
 .galeri-item img{border-radius:8px;}
-.prestasi-item i{color:#ffc107; font-size:20px;}
+.prestasi-item i{color:#ffc107; font-size:20px; min-width:25px; text-align:center;}
 
 /* PETA LOKASI */
 .peta-box{border-radius:10px; overflow:hidden; height:200px;}
@@ -215,7 +226,7 @@ footer a:hover{text-decoration:underline;}
 </head>
 <body>
 
-<!-- ✅ TOMBOL MUSIK -->
+<!-- ✅ TOMBOL MUSIK & AUDIO -->
 <audio id="musikLatar" src="music.mp3" loop preload="auto">
 <div class="audio-tombol" onclick="kontrolMusik()"><i class="fas fa-volume-up"></i> Musik</div>
 
@@ -240,4 +251,4 @@ footer a:hover{text-decoration:underline;}
     <iframe class="youtube-bg" src="https://www.youtube.com/embed/PHKbLcB8ktE?autoplay=1&mute=1&loop=1&playlist=PHKbLcB8ktE&controls=0&showinfo=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <iframe class="youtube-bg" src="https://www.youtube.com/embed/43VaINWoPdI?autoplay=1&mute=1&loop=1&playlist=43VaINWoPdI&controls=0&showinfo=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <iframe class="youtube-bg" src="https://www.youtube.com/embed/rjovUpD4Fqw?autoplay=1&mute=1&loop=1&playlist=rjovUpD4Fqw&controls=0&showinfo=0&rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <iframe class="youtube-bg" src="https://www.youtube.com/embed/kZ6W1LqYbWw?autoplay=1&mute=
+    <iframe class="youtube-bg" src="https://www.youtube.com/embed/kZ6W1LqYbWw?autoplay=1&mute=1&loop=1&playlist=kZ6W1LqYbWw&controls=0&showinfo=0&rel=0" allow="autoplay; encrypted
