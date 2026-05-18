@@ -2,45 +2,25 @@
 <html lang="id">
 <head>
 
-<!-- =========================
-     IKLAN POPCASH (ASLI TETAP)
-========================= -->
-
-<script type="text/javascript">
-var uid = '492570';
-var wid = '743123';
-
-var pop_tag = document.createElement('script');
-pop_tag.src='//cdn.popcash.net/show.js';
-
-document.body.appendChild(pop_tag);
-
-pop_tag.onerror = function() {
-
-pop_tag = document.createElement('script');
-
-pop_tag.src='//cdn2.popcash.net/show.js';
-
-document.body.appendChild(pop_tag)
-
-};
-</script>
-
-<meta name="ppck-ver" content="a6d1ceb3ea679d9a8a8f8df729908596"/>
-<meta name="ppck-ver" content="a35973a51f53f9eae15ee92e7154f197"/>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>PAUD-KB ASSYIFA' BRUMBUNG</title>
 
+<meta name="description"
+content="Website resmi PAUD-KB ASSYIFA' BRUMBUNG Desa Brumbung Kecamatan Jepon Kabupaten Blora Jawa Tengah">
+
+<meta name="ppck-ver" content="a6d1ceb3ea679d9a8a8f8df729908596">
+<meta name="ppck-ver" content="a35973a51f53f9eae15ee92e7154f197">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* =========================
-   RESET
-========================= */
+/* RESET */
 
 *{
 margin:0;
@@ -49,235 +29,147 @@ box-sizing:border-box;
 }
 
 body{
-
 font-family:'Poppins',sans-serif;
-
 overflow-x:hidden;
-
 color:white;
-
 min-height:100vh;
-
 background:black;
 }
 
-/* =========================
-   VIDEO BACKGROUND
-========================= */
+/* VIDEO */
 
 .video-background{
-
 position:fixed;
-
 top:0;
 left:0;
-
 width:100%;
 height:100%;
-
 overflow:hidden;
-
 z-index:-3;
 }
 
 .video-background video{
-
 width:100%;
 height:100%;
-
 object-fit:cover;
-
 filter:
 brightness(0.45)
 contrast(1.1)
 saturate(1.1);
 }
 
-/* =========================
-   OVERLAY
-========================= */
+/* OVERLAY */
 
 .overlay{
-
 position:fixed;
-
 top:0;
 left:0;
-
 width:100%;
 height:100%;
-
 background:
 linear-gradient(
 rgba(0,0,0,0.35),
 rgba(0,0,0,0.65)
 );
-
 z-index:-2;
 }
 
-/* =========================
-   JAM
-========================= */
+/* CLOCK */
 
 #clock{
-
 position:fixed;
-
 top:15px;
 right:15px;
-
 background:rgba(255,255,255,0.15);
-
 padding:10px 15px;
-
 border-radius:15px;
-
 backdrop-filter:blur(10px);
-
 font-weight:bold;
-
 z-index:999;
 }
 
-/* =========================
-   TOMBOL MUSIK
-========================= */
+/* MUSIC BUTTON */
 
 .music-btn{
-
 position:fixed;
-
 left:20px;
 bottom:20px;
-
 z-index:999;
-
 border:none;
-
 background:#00c97f;
-
 color:white;
-
 padding:14px 18px;
-
 border-radius:50px;
-
 font-size:16px;
-
 cursor:pointer;
-
-box-shadow:
-0 0 20px rgba(0,255,170,0.5);
-
+box-shadow:0 0 20px rgba(0,255,170,0.5);
 transition:0.3s;
 }
 
 .music-btn:hover{
-
 transform:scale(1.05);
-
 background:#00e18f;
 }
 
-/* =========================
-   CONTAINER
-========================= */
+/* CONTAINER */
 
 .container{
-
 width:100%;
 max-width:1200px;
-
 margin:auto;
-
 padding:20px;
 }
 
-/* =========================
-   HERO CARD
-========================= */
+/* HERO */
 
 .hero-card{
-
 margin-top:30px;
-
 background:rgba(255,255,255,0.08);
-
 border-radius:30px;
-
 padding:30px;
-
 text-align:center;
-
 backdrop-filter:blur(10px);
-
 border:1px solid rgba(255,255,255,0.12);
-
-box-shadow:
-0 10px 40px rgba(0,0,0,0.45);
+box-shadow:0 10px 40px rgba(0,0,0,0.45);
 }
 
-/* =========================
-   LOGO AREA
-========================= */
+/* LOGO */
 
 .logo-container{
-
 position:relative;
-
 width:170px;
 height:170px;
-
-margin:auto;
-margin-bottom:20px;
-
+margin:auto auto 20px;
 display:flex;
-
 justify-content:center;
 align-items:center;
 }
 
-/* LOGO UTAMA */
-
-.main-logo{
-
+.main-logo,
+.intro-logo{
 position:absolute;
-
 width:170px;
-
-animation:float 3s ease-in-out infinite;
-
 transition:1s;
 }
 
-/* INTRO GIF / MP4 */
+.main-logo{
+animation:float 3s ease-in-out infinite;
+}
 
 .intro-logo{
-
-position:absolute;
-
-width:170px;
-
 opacity:0;
-
-transition:1s;
-
 border-radius:20px;
 }
 
 .show-intro{
-
 opacity:1;
 }
 
 .hide-main{
-
 opacity:0;
 }
 
 @keyframes float{
-
 0%,100%{
 transform:translateY(0);
 }
@@ -287,67 +179,61 @@ transform:translateY(-8px);
 }
 }
 
-/* =========================
-   TEXT
-========================= */
+/* TEXT */
 
 h1{
-
 font-size:34px;
-
 margin-bottom:15px;
 }
 
 .desc{
-
 line-height:1.8;
-
 margin-bottom:25px;
-
 font-size:17px;
-
 color:#ddd;
 }
 
-marquee{
+/* RUNNING TEXT */
 
-color:#00ffae;
-
-font-weight:bold;
-
+.running-text{
+overflow:hidden;
+white-space:nowrap;
 margin-bottom:20px;
 }
 
-/* =========================
-   MENU GRID
-========================= */
+.running-text span{
+display:inline-block;
+padding-left:100%;
+animation:marquee 18s linear infinite;
+color:#00ffae;
+font-weight:bold;
+}
+
+@keyframes marquee{
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-100%);
+}
+}
+
+/* MENU */
 
 .menu-grid{
-
 display:grid;
-
 grid-template-columns:
 repeat(auto-fit,minmax(220px,1fr));
-
 gap:20px;
-
 margin-top:30px;
 }
 
-/* =========================
-   MENU CARD
-========================= */
-
 .menu-card{
-
 text-decoration:none;
-
 color:white;
-
 padding:22px 20px;
-
 border-radius:22px;
-
 transition:0.3s;
 
 background:
@@ -358,7 +244,6 @@ rgba(0,120,255,0.28)
 );
 
 backdrop-filter:blur(10px);
-
 border:1px solid rgba(255,255,255,0.12);
 
 box-shadow:
@@ -366,130 +251,85 @@ box-shadow:
 }
 
 .menu-card:hover{
-
 transform:
 translateY(-6px)
 scale(1.03);
 }
 
 .menu-icon{
-
 font-size:40px;
-
 margin-bottom:15px;
-
 display:block;
 }
 
 .menu-title{
-
 font-size:19px;
-
 font-weight:600;
 }
 
-/* =========================
-   IKLAN
-========================= */
+/* IKLAN */
 
 .iklan{
-
 margin:30px auto;
-
 padding:10px;
-
 background:rgba(255,255,255,0.08);
-
 border-radius:20px;
 }
 
-/* =========================
-   PROFIL
-========================= */
+/* PROFILE */
 
 .profile-section{
-
 margin-top:40px;
-
 padding:30px;
-
 border-radius:25px;
-
 background:rgba(255,255,255,0.08);
-
 backdrop-filter:blur(10px);
 }
 
 .profile-title{
-
 font-size:28px;
-
 margin-bottom:20px;
-
 text-align:center;
 }
 
 .profile-text{
-
 line-height:1.9;
-
 text-align:center;
-
 color:#ddd;
 }
 
-/* =========================
-   GALERI
-========================= */
+/* GALLERY */
 
 .gallery{
-
 margin-top:40px;
-
 display:grid;
-
 grid-template-columns:
 repeat(auto-fit,minmax(250px,1fr));
-
 gap:20px;
 }
 
 .gallery img{
-
 width:100%;
-
 border-radius:20px;
-
 height:220px;
-
 object-fit:cover;
-
 transition:0.3s;
 }
 
 .gallery img:hover{
-
 transform:scale(1.03);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
-
 text-align:center;
-
 margin-top:40px;
-
 padding:30px 10px;
-
 color:#ddd;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media(max-width:768px){
 
@@ -519,15 +359,38 @@ padding:22px;
 
 <body>
 
-<!-- =========================
-     VIDEO BACKGROUND
-========================= -->
+<!-- POPCASH -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+var uid = '492570';
+var wid = '743123';
+
+var pop_tag = document.createElement('script');
+
+pop_tag.src='https://cdn.popcash.net/show.js';
+
+document.body.appendChild(pop_tag);
+
+pop_tag.onerror = function(){
+
+var backup = document.createElement('script');
+
+backup.src='https://cdn2.popcash.net/show.js';
+
+document.body.appendChild(backup);
+
+};
+
+});
+</script>
+
+<!-- VIDEO -->
 
 <div class="video-background">
 
-<video autoplay muted loop playsinline>
-
-<!-- GANTI LINK VIDEO -->
+<video autoplay muted loop playsinline preload="auto">
 
 <source src="bg.mp4" type="video/mp4">
 
@@ -537,27 +400,17 @@ padding:22px;
 
 <div class="overlay"></div>
 
-<!-- =========================
-     AUDIO
-========================= -->
+<!-- AUDIO -->
 
-<audio id="bgMusic" loop>
-
-<!-- GANTI MUSIC -->
+<audio id="bgMusic" loop preload="auto">
 
 <source src="music.mp3" type="audio/mp3">
 
 </audio>
 
-<!-- =========================
-     TOMBOL MUSIK
-========================= -->
-
 <button class="music-btn" onclick="playMusic()">
 🔊 Musik
 </button>
-
-<!-- JAM -->
 
 <div id="clock"></div>
 
@@ -565,54 +418,48 @@ padding:22px;
 
 <div class="hero-card">
 
-<!-- =========================
-     LOGO DINAMIS
-========================= -->
+<!-- LOGO -->
 
 <div class="logo-container">
-
-<!-- LOGO UTAMA -->
 
 <img
 src="logo_hd.png"
 class="main-logo"
-id="mainLogo">
-
-<!-- INTRO 1 -->
+id="mainLogo"
+alt="Logo PAUD">
 
 <img
 src="intro1.gif"
 class="intro-logo"
-id="intro1">
-
-<!-- INTRO 2 -->
+id="intro1"
+alt="Intro 1">
 
 <img
 src="intro2.gif"
 class="intro-logo"
-id="intro2">
-
-<!-- INTRO 3 -->
+id="intro2"
+alt="Intro 2">
 
 <img
 src="intro3.gif"
 class="intro-logo"
-id="intro3">
+id="intro3"
+alt="Intro 3">
 
 </div>
 
-<!-- MARQUEE -->
+<!-- RUNNING TEXT -->
 
-<marquee behavior="scroll" direction="left">
+<div class="running-text">
 
+<span>
 ✨ Selamat Datang di Website Resmi
 PAUD-KB ASSYIFA'
 Desa Brumbung Kecamatan Jepon
 Kabupaten Blora Jawa Tengah ✨
+</span>
 
-</marquee>
-
-<!-- JUDUL -->
+</div>
 
 <h1>PAUD-KB ASSYIFA' BRUMBUNG</h1>
 
@@ -623,12 +470,14 @@ Cerdas • Islami • Berakhlak
 
 </div>
 
-<!-- IKLAN ATAS -->
+<!-- IKLAN -->
 
 <div class="iklan">
 
-<script type="text/javascript"
-src="//pl27069849.profitableratecpm.com/8c">
+<!-- PASTIKAN LINK SCRIPT IKLAN VALID -->
+
+<script async
+src="https://pl27069849.profitableratecpm.com/8c.js">
 </script>
 
 </div>
@@ -645,78 +494,6 @@ target="_blank">
 
 <div class="menu-title">
 PAUD Brumbung
-</div>
-
-</a>
-
-<a class="menu-card"
-href="https://paudkbbrumbung.blogspot.com"
-target="_blank">
-
-<span class="menu-icon">📚</span>
-
-<div class="menu-title">
-PAUD KB Brumbung
-</div>
-
-</a>
-
-<a class="menu-card"
-href="https://kbassyifa.blogspot.com"
-target="_blank">
-
-<span class="menu-icon">🕌</span>
-
-<div class="menu-title">
-KB Assyifa
-</div>
-
-</a>
-
-<a class="menu-card"
-href="https://tipspintarsehari.blogspot.com"
-target="_blank">
-
-<span class="menu-icon">💡</span>
-
-<div class="menu-title">
-Tips Pintar Sehari
-</div>
-
-</a>
-
-<a class="menu-card"
-href="https://albtvklick.blogspot.com"
-target="_blank">
-
-<span class="menu-icon">📺</span>
-
-<div class="menu-title">
-ALB TV Klick
-</div>
-
-</a>
-
-<a class="menu-card"
-href="https://bdybangsa.blogspot.com"
-target="_blank">
-
-<span class="menu-icon">🎭</span>
-
-<div class="menu-title">
-Budaya Bangsa
-</div>
-
-</a>
-
-<a class="menu-card"
-href="https://www.instagram.com/pkbassyifa"
-target="_blank">
-
-<span class="menu-icon">📷</span>
-
-<div class="menu-title">
-Instagram
 </div>
 
 </a>
@@ -745,35 +522,11 @@ WhatsApp
 
 </a>
 
-<a class="menu-card"
-href="https://www.facebook.com/kbassyifa.brumbung"
-target="_blank">
-
-<span class="menu-icon">📘</span>
-
-<div class="menu-title">
-Facebook
-</div>
-
-</a>
-
-</div>
-
-<!-- IKLAN TENGAH -->
-
-<div class="iklan">
-
-<script type="text/javascript"
-src="//pl27069849.profitableratecpm.com/8c">
-</script>
-
 </div>
 
 </div>
 
-<!-- =========================
-     PROFIL SEKOLAH
-========================= -->
+<!-- PROFIL -->
 
 <div class="profile-section">
 
@@ -795,9 +548,7 @@ serta berakhlak mulia.
 
 </div>
 
-<!-- =========================
-     GALERI
-========================= -->
+<!-- GALERI -->
 
 <div class="profile-section">
 
@@ -807,9 +558,9 @@ serta berakhlak mulia.
 
 <div class="gallery">
 
-<img src="galeri1.jpg">
-<img src="galeri2.jpg">
-<img src="galeri3.jpg">
+<img src="galeri1.jpg" loading="lazy" alt="Galeri 1">
+<img src="galeri2.jpg" loading="lazy" alt="Galeri 2">
+<img src="galeri3.jpg" loading="lazy" alt="Galeri 3">
 
 </div>
 
@@ -817,8 +568,8 @@ serta berakhlak mulia.
 
 <footer>
 
-Copyright © 2025
-KB Assyifa Brumbung
+Copyright © 2026
+PAUD-KB ASSYIFA' BRUMBUNG
 
 </footer>
 
@@ -826,9 +577,7 @@ KB Assyifa Brumbung
 
 <script>
 
-/* =========================
-   JAM
-========================= */
+/* JAM */
 
 function updateClock(){
 
@@ -846,9 +595,7 @@ setInterval(updateClock,1000);
 
 updateClock();
 
-/* =========================
-   MUSIK
-========================= */
+/* MUSIK */
 
 function playMusic(){
 
@@ -859,9 +606,18 @@ music.play();
 
 }
 
-/* =========================
-   INTRO LOGO BERGANTIAN
-========================= */
+/* AUTO PLAY */
+
+window.addEventListener("click", () => {
+
+const music =
+document.getElementById("bgMusic");
+
+music.play().catch(() => {});
+
+}, { once:true });
+
+/* INTRO LOGO */
 
 const mainLogo =
 document.getElementById("mainLogo");
@@ -901,8 +657,6 @@ currentIntro = 0;
 },5000);
 
 }
-
-/* MUNCUL SETIAP 10 DETIK */
 
 setInterval(showIntro,10000);
 
