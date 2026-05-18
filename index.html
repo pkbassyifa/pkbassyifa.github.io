@@ -1,363 +1,121 @@
-<!-- =========================================================
-PAUD-KB ASSYIFA' BRUMBUNG
-VERSI MODERN FULL PREMIUM
-========================================================= -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
 
-<!-- TAMBAHKAN LINK ICON -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PAUD-KB ASSYIFA' BRUMBUNG</title>
+
+<meta name="description"
+content="Website resmi PAUD-KB ASSYIFA' BRUMBUNG Desa Brumbung Kecamatan Jepon Kabupaten Blora Jawa Tengah">
+
+<meta name="ppck-ver" content="a6d1ceb3ea679d9a8a8f8df729908596">
+<meta name="ppck-ver" content="a35973a51f53f9eae15ee92e7154f197">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* =========================================================
-RESET
-========================================================= */
+<style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
+/* =========================================
+UPGRADE MODERN UI
+========================================= */
 
 body{
-font-family:'Poppins',sans-serif;
-background:#f3f5f7;
-overflow-x:hidden;
-color:#222;
+background:#eef2f3;
 }
 
-/* =========================================================
-BACKGROUND
-========================================================= */
-
-.video-background{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-z-index:-3;
-overflow:hidden;
-}
-
-.video-background video{
-width:100%;
-height:100%;
-object-fit:cover;
-filter:
-brightness(0.45)
-blur(1px)
-contrast(1.1);
-}
-
-.overlay{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:
-linear-gradient(
-rgba(0,0,0,0.25),
-rgba(0,0,0,0.55)
-);
-z-index:-2;
-}
-
-/* =========================================================
-LOADING
-========================================================= */
-
-#loader{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:#071b11;
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:99999;
-flex-direction:column;
-color:white;
-}
-
-.loader-logo{
-width:120px;
-animation:putar 2s linear infinite;
-}
-
-@keyframes putar{
-100%{
-transform:rotate(360deg);
-}
-}
-
-/* =========================================================
-CLOCK
-========================================================= */
-
-#clock{
-position:fixed;
-top:15px;
-right:15px;
-background:rgba(255,255,255,0.18);
-backdrop-filter:blur(10px);
-padding:12px 18px;
-border-radius:15px;
-color:white;
-font-weight:bold;
-z-index:999;
-border:1px solid rgba(255,255,255,0.2);
-}
-
-/* =========================================================
-MUSIC BUTTON
-========================================================= */
-
-.music-btn{
-position:fixed;
-left:15px;
-top:15px;
-z-index:999;
-border:none;
-background:linear-gradient(135deg,#00c853,#009624);
-color:white;
-padding:12px 18px;
-border-radius:15px;
-font-weight:600;
-cursor:pointer;
-box-shadow:0 6px 18px rgba(0,0,0,0.25);
-}
-
-/* =========================================================
-WHATSAPP FLOAT
-========================================================= */
-
-.wa-float{
-position:fixed;
-right:20px;
-bottom:20px;
-width:70px;
-height:70px;
-background:#25d366;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:35px;
-color:white;
-text-decoration:none;
-z-index:999;
-box-shadow:0 8px 20px rgba(0,0,0,0.3);
-animation:wa 2s infinite;
-}
-
-@keyframes wa{
-0%{
-transform:scale(1);
-}
-
-50%{
-transform:scale(1.08);
-}
-
-100%{
-transform:scale(1);
-}
-}
-
-/* =========================================================
-CONTAINER
-========================================================= */
-
-.container{
-max-width:1250px;
-margin:auto;
-padding:20px;
-}
-
-/* =========================================================
-HERO
-========================================================= */
+/* HERO GLASS */
 
 .hero-card{
 
-margin-top:45px;
+background:
+rgba(0,0,0,0.38);
 
-padding:35px;
+backdrop-filter:
+blur(16px);
 
-border-radius:35px;
+border:
+1px solid rgba(255,255,255,0.25);
+
+}
+
+/* LOGO */
+
+.logo-container{
+width:190px;
+height:190px;
+}
+
+/* TITLE */
+
+h1{
+
+font-size:58px;
+
+font-weight:700;
+
+color:white;
+
+text-shadow:
+0 4px 10px rgba(0,0,0,0.5);
+
+}
+
+.desc{
+
+font-size:30px;
+
+color:white;
+
+font-weight:500;
+
+}
+
+/* RUNNING TEXT */
+
+.running-text{
 
 background:
 rgba(0,0,0,0.35);
 
-backdrop-filter:blur(15px);
+padding:10px;
+
+border-radius:14px;
 
 border:
-1px solid rgba(255,255,255,0.2);
-
-box-shadow:
-0 15px 40px rgba(0,0,0,0.3);
-
-text-align:center;
+1px solid rgba(0,255,140,0.4);
 
 }
 
-/* =========================================================
-LOGO
-========================================================= */
-
-.logo-container{
-position:relative;
-width:180px;
-height:180px;
-margin:auto;
-margin-bottom:20px;
-}
-
-.main-logo,
-.intro-logo{
-position:absolute;
-width:100%;
-transition:1s;
-}
-
-.main-logo{
-animation:float 3s ease-in-out infinite;
-}
-
-.intro-logo{
-opacity:0;
-border-radius:20px;
-}
-
-.show-intro{
-opacity:1;
-}
-
-.hide-main{
-opacity:0;
-}
-
-@keyframes float{
-
-0%,100%{
-transform:translateY(0);
-}
-
-50%{
-transform:translateY(-10px);
-}
-
-}
-
-/* =========================================================
-RUNNING TEXT
-========================================================= */
-
-.running-text{
-overflow:hidden;
-white-space:nowrap;
-margin-bottom:20px;
-background:rgba(0,0,0,0.35);
-padding:10px;
-border-radius:15px;
-border:1px solid rgba(0,255,150,0.5);
-}
-
-.running-text span{
-display:inline-block;
-padding-left:100%;
-animation:marquee 18s linear infinite;
-color:#00ffae;
-font-weight:600;
-}
-
-@keyframes marquee{
-
-0%{
-transform:translateX(0);
-}
-
-100%{
-transform:translateX(-100%);
-}
-
-}
-
-/* =========================================================
-TITLE
-========================================================= */
-
-.hero-title{
-font-size:55px;
-font-weight:700;
-color:white;
-margin-bottom:10px;
-}
-
-.hero-desc{
-font-size:28px;
-line-height:1.7;
-color:white;
-}
-
-/* =========================================================
-IKLAN
-========================================================= */
-
-.iklan{
-margin:25px auto;
-padding:15px;
-border-radius:18px;
-background:rgba(255,255,255,0.08);
-color:white;
-border:1px solid rgba(255,255,255,0.15);
-}
-
-/* =========================================================
-MENU GRID
-========================================================= */
+/* MENU */
 
 .menu-grid{
-display:grid;
+
 grid-template-columns:
 repeat(auto-fit,minmax(180px,1fr));
-gap:18px;
-margin-top:30px;
-}
 
-/* =========================================================
-MENU CARD
-========================================================= */
+gap:18px;
+
+}
 
 .menu-card{
 
-padding:28px 18px;
+padding:30px 18px;
 
-border-radius:22px;
-
-text-decoration:none;
-
-color:white;
+text-align:center;
 
 font-weight:600;
 
-transition:0.3s;
+border-radius:22px;
 
 box-shadow:
-0 10px 20px rgba(0,0,0,0.2);
-
-}
-
-.menu-card:hover{
-
-transform:
-translateY(-8px)
-scale(1.03);
+0 10px 20px rgba(0,0,0,0.3);
 
 }
 
@@ -372,7 +130,7 @@ background:linear-gradient(135deg,#2196f3,#1565c0);
 }
 
 .menu-card:nth-child(3){
-background:linear-gradient(135deg,#9c27b0,#6a1b9a);
+background:linear-gradient(135deg,#00c853,#00897b);
 }
 
 .menu-card:nth-child(4){
@@ -404,198 +162,291 @@ background:linear-gradient(135deg,#1976d2,#0d47a1);
 }
 
 .menu-icon{
+
 font-size:55px;
-margin-bottom:15px;
-display:block;
+
+margin-bottom:16px;
+
 }
 
-/* =========================================================
-SECTION
-========================================================= */
+/* SECTION MODERN */
 
-.section{
+.modern-section{
+
 margin-top:25px;
+
 background:white;
-border-radius:25px;
+
 padding:28px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+border-radius:26px;
+
+box-shadow:
+0 5px 18px rgba(0,0,0,0.08);
+
+color:#222;
+
 }
 
-.section-title{
+.modern-title{
+
 font-size:28px;
+
 font-weight:700;
-color:#0b7a43;
+
+color:#0a7d42;
+
 margin-bottom:20px;
+
 }
 
-/* =========================================================
-INFO GRID
-========================================================= */
+/* GRID */
 
 .info-grid{
+
 display:grid;
+
 grid-template-columns:
 repeat(auto-fit,minmax(260px,1fr));
+
 gap:20px;
-margin-top:25px;
+
 }
 
+/* CARD */
+
 .info-card{
-background:white;
-border-radius:24px;
-padding:25px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+background:#fff;
+
+border-radius:22px;
+
+padding:22px;
+
+box-shadow:
+0 4px 14px rgba(0,0,0,0.07);
+
 }
 
 .info-card p{
+
 line-height:1.8;
+
+color:#444;
+
 margin-top:10px;
+
 }
 
-/* =========================================================
-BUTTON
-========================================================= */
+/* BUTTON */
 
 .btn-modern{
+
 display:inline-block;
-margin-top:18px;
+
+margin-top:16px;
+
 padding:12px 22px;
+
 background:#0b9444;
+
 color:white;
+
 text-decoration:none;
+
 border-radius:50px;
+
 font-weight:600;
+
 transition:0.3s;
+
 }
 
 .btn-modern:hover{
+
 background:#087235;
+
 transform:scale(1.04);
+
 }
 
-/* =========================================================
-GALLERY
-========================================================= */
-
-.gallery{
-display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-height:230px;
-object-fit:cover;
-border-radius:20px;
-transition:0.3s;
-}
-
-.gallery img:hover{
-transform:scale(1.03);
-}
-
-/* =========================================================
-TEACHER
-========================================================= */
+/* TEACHER */
 
 .teacher-grid{
+
 display:grid;
+
 grid-template-columns:
 repeat(auto-fit,minmax(220px,1fr));
+
 gap:20px;
+
 }
 
 .teacher-card{
+
 text-align:center;
+
 }
 
 .teacher-card img{
+
 width:120px;
 height:120px;
+
 border-radius:50%;
+
 object-fit:cover;
+
 margin-bottom:12px;
+
+border:4px solid #0a7d42;
+
 }
 
-/* =========================================================
-MAP
-========================================================= */
+/* PRESTASI */
+
+.prestasi li{
+
+margin-bottom:15px;
+
+line-height:1.7;
+
+}
+
+/* MAP */
 
 .map iframe{
+
 width:100%;
+
 height:350px;
+
 border:none;
+
 border-radius:20px;
+
 }
 
-/* =========================================================
-FOOTER
-========================================================= */
+/* WA FLOAT */
 
-footer{
-margin-top:40px;
-background:#0a5f33;
-color:white;
-padding:40px 20px;
-border-radius:25px 25px 0 0;
-}
+.wa-float{
 
-.footer-grid{
-display:grid;
-grid-template-columns:
-repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-}
+position:fixed;
 
-.footer-title{
-font-size:22px;
-margin-bottom:15px;
-}
+right:20px;
+bottom:20px;
 
-.footer-link{
-display:block;
-color:white;
-text-decoration:none;
-margin-bottom:10px;
-}
+width:70px;
+height:70px;
 
-.social-icons{
-margin-top:15px;
-}
+background:#25d366;
 
-.social-icons a{
-display:inline-flex;
-width:45px;
-height:45px;
+border-radius:50%;
+
+display:flex;
+
 justify-content:center;
 align-items:center;
-background:white;
-color:#0a5f33;
-border-radius:50%;
-margin-right:10px;
-font-size:20px;
+
+font-size:34px;
+
+color:white;
+
 text-decoration:none;
+
+z-index:999;
+
+box-shadow:
+0 8px 20px rgba(0,0,0,0.3);
+
+animation:wa 2s infinite;
+
 }
 
-.copyright{
-margin-top:30px;
-text-align:center;
+@keyframes wa{
+
+0%{
+transform:scale(1);
 }
 
-/* =========================================================
-RESPONSIVE
-========================================================= */
+50%{
+transform:scale(1.08);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* LOADER */
+
+#loader{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:#071b11;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
+flex-direction:column;
+
+z-index:99999;
+
+color:white;
+
+}
+
+.loader-logo{
+
+width:120px;
+
+animation:spin 3s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:#0a5f33;
+
+color:white;
+
+border-radius:30px 30px 0 0;
+
+margin-top:40px;
+
+}
+
+/* RESPONSIVE */
 
 @media(max-width:768px){
 
-.hero-title{
+h1{
 font-size:34px;
 }
 
-.hero-desc{
-font-size:20px;
+.desc{
+font-size:22px;
 }
 
 .logo-container{
@@ -611,9 +462,561 @@ font-size:42px;
 
 </style>
 
-<!-- =========================================================
+  
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+overflow-x:hidden;
+color:white;
+min-height:100vh;
+background:black;
+}
+
+/* VIDEO */
+
+.video-background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:-3;
+}
+
+.video-background video{
+width:100%;
+height:100%;
+object-fit:cover;
+filter:
+brightness(0.45)
+contrast(1.1)
+saturate(1.1);
+}
+
+/* OVERLAY */
+
+.overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+linear-gradient(
+rgba(0,0,0,0.35),
+rgba(0,0,0,0.65)
+);
+z-index:-2;
+}
+
+/* CLOCK */
+
+#clock{
+position:fixed;
+top:15px;
+right:15px;
+background:rgba(255,255,255,0.15);
+padding:10px 15px;
+border-radius:15px;
+backdrop-filter:blur(10px);
+font-weight:bold;
+z-index:999;
+}
+
+/* MUSIC BUTTON */
+
+.music-btn{
+position:fixed;
+left:20px;
+bottom:20px;
+z-index:999;
+border:none;
+background:#00c97f;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+font-size:16px;
+cursor:pointer;
+box-shadow:0 0 20px rgba(0,255,170,0.5);
+transition:0.3s;
+}
+
+.music-btn:hover{
+transform:scale(1.05);
+background:#00e18f;
+}
+
+/* CONTAINER */
+
+.container{
+width:100%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+/* HERO */
+
+.hero-card{
+margin-top:30px;
+background:rgba(255,255,255,0.08);
+border-radius:30px;
+padding:30px;
+text-align:center;
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.12);
+box-shadow:0 10px 40px rgba(0,0,0,0.45);
+}
+
+/* LOGO */
+
+.logo-container{
+position:relative;
+width:170px;
+height:170px;
+margin:auto auto 20px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.main-logo,
+.intro-logo{
+position:absolute;
+width:170px;
+transition:1s;
+}
+
+.main-logo{
+animation:float 3s ease-in-out infinite;
+}
+
+.intro-logo{
+opacity:0;
+border-radius:20px;
+}
+
+.show-intro{
+opacity:1;
+}
+
+.hide-main{
+opacity:0;
+}
+
+@keyframes float{
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-8px);
+}
+}
+
+/* TEXT */
+
+h1{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.desc{
+line-height:1.8;
+margin-bottom:25px;
+font-size:17px;
+color:#ddd;
+}
+
+/* RUNNING TEXT */
+
+.running-text{
+overflow:hidden;
+white-space:nowrap;
+margin-bottom:20px;
+}
+
+.running-text span{
+display:inline-block;
+padding-left:100%;
+animation:marquee 18s linear infinite;
+color:#00ffae;
+font-weight:bold;
+}
+
+@keyframes marquee{
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-100%);
+}
+}
+
+/* MENU */
+
+.menu-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.menu-card{
+text-decoration:none;
+color:white;
+padding:22px 20px;
+border-radius:22px;
+transition:0.3s;
+
+background:
+linear-gradient(
+145deg,
+rgba(0,255,140,0.35),
+rgba(0,120,255,0.28)
+);
+
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.12);
+
+box-shadow:
+0 8px 18px rgba(0,0,0,0.35);
+}
+
+.menu-card:hover{
+transform:
+translateY(-6px)
+scale(1.03);
+}
+
+.menu-icon{
+font-size:40px;
+margin-bottom:15px;
+display:block;
+}
+
+.menu-title{
+font-size:19px;
+font-weight:600;
+}
+
+/* IKLAN */
+
+.iklan{
+margin:30px auto;
+padding:10px;
+background:rgba(255,255,255,0.08);
+border-radius:20px;
+}
+
+/* PROFILE */
+
+.profile-section{
+margin-top:40px;
+padding:30px;
+border-radius:25px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+}
+
+.profile-title{
+font-size:28px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.profile-text{
+line-height:1.9;
+text-align:center;
+color:#ddd;
+}
+
+/* GALLERY */
+
+.gallery{
+margin-top:40px;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:20px;
+height:220px;
+object-fit:cover;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+margin-top:40px;
+padding:30px 10px;
+color:#ddd;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+h1{
+font-size:26px;
+}
+
+.logo-container{
+width:130px;
+height:130px;
+}
+
+.main-logo,
+.intro-logo{
+width:130px;
+}
+
+.hero-card{
+padding:22px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- POPCASH -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+var uid = '492570';
+var wid = '743123';
+
+var pop_tag = document.createElement('script');
+
+pop_tag.src='https://cdn.popcash.net/show.js';
+
+document.body.appendChild(pop_tag);
+
+pop_tag.onerror = function(){
+
+var backup = document.createElement('script');
+
+backup.src='https://cdn2.popcash.net/show.js';
+
+document.body.appendChild(backup);
+
+};
+
+});
+</script>
+
+<!-- VIDEO -->
+
+<div class="video-background">
+
+<video autoplay muted loop playsinline preload="auto">
+
+<source src="bg.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+<div class="overlay"></div>
+
+<!-- AUDIO -->
+
+<audio id="bgMusic" loop preload="auto">
+
+<source src="music.mp3" type="audio/mp3">
+
+</audio>
+
+<button class="music-btn" onclick="playMusic()">
+🔊 Musik
+</button>
+
+<div id="clock"></div>
+
+<div class="container">
+
+<div class="hero-card">
+
+<!-- LOGO -->
+
+<div class="logo-container">
+
+<img
+src="logo_hd.png"
+class="main-logo"
+id="mainLogo"
+alt="Logo PAUD">
+
+<img
+src="intro1.gif"
+class="intro-logo"
+id="intro1"
+alt="Intro 1">
+
+<img
+src="intro2.gif"
+class="intro-logo"
+id="intro2"
+alt="Intro 2">
+
+<img
+src="intro3.gif"
+class="intro-logo"
+id="intro3"
+alt="Intro 3">
+
+</div>
+
+<!-- RUNNING TEXT -->
+
+<div class="running-text">
+
+<span>
+✨ Selamat Datang di Website Resmi
+PAUD-KB ASSYIFA'
+Desa Brumbung Kecamatan Jepon
+Kabupaten Blora Jawa Tengah ✨
+</span>
+
+</div>
+
+<h1>PAUD-KB ASSYIFA' BRUMBUNG</h1>
+
+<div class="desc">
+
+Pendidikan Anak Usia Dini<br>
+Cerdas • Islami • Berakhlak
+
+</div>
+
+<!-- IKLAN -->
+
+<div class="iklan">
+
+<!-- PASTIKAN LINK SCRIPT IKLAN VALID -->
+
+<script async
+src="https://pl27069849.profitableratecpm.com/8c.js">
+</script>
+
+</div>
+
+<!-- MENU -->
+
+<div class="menu-grid">
+
+<a class="menu-card"
+href="https://paudbrumbung.blogspot.com"
+target="_blank">
+
+<span class="menu-icon">🏫</span>
+
+<div class="menu-title">
+PAUD Brumbung
+</div>
+
+</a>
+
+<a class="menu-card"
+href="https://www.youtube.com/@assyifakidsblora"
+target="_blank">
+
+<span class="menu-icon">▶️</span>
+
+<div class="menu-title">
+YouTube
+</div>
+
+</a>
+
+<a class="menu-card"
+href="https://wa.me/6282313744454"
+target="_blank">
+
+<span class="menu-icon">💬</span>
+
+<div class="menu-title">
+WhatsApp
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+<!-- PROFIL -->
+
+<div class="profile-section">
+
+<div class="profile-title">
+🏫 Profil Sekolah
+</div>
+
+<div class="profile-text">
+
+PAUD-KB ASSYIFA' BRUMBUNG
+merupakan lembaga pendidikan anak usia dini
+yang mengedepankan pendidikan islami,
+karakter, kreativitas,
+dan pembelajaran menyenangkan
+untuk membentuk generasi cerdas
+serta berakhlak mulia.
+
+</div>
+
+</div>
+
+<!-- GALERI -->
+
+<div class="profile-section">
+
+<div class="profile-title">
+📸 Galeri Kegiatan
+</div>
+
+<div class="gallery">
+
+<img src="galeri1.jpg" loading="lazy" alt="Galeri 1">
+<img src="galeri2.jpg" loading="lazy" alt="Galeri 2">
+<img src="galeri3.jpg" loading="lazy" alt="Galeri 3">
+
+</div>
+
+</div>
+
+<footer>
+
+Copyright © 2026
+PAUD-KB ASSYIFA' BRUMBUNG
+
+  <!-- =========================================
 LOADER
-========================================================= -->
+========================================= -->
 
 <div id="loader">
 
@@ -625,22 +1028,24 @@ class="loader-logo">
 
 </div>
 
-<!-- =========================================================
+<!-- =========================================
 WHATSAPP FLOAT
-========================================================= -->
+========================================= -->
 
 <a
 href="https://wa.me/6282313744454"
 class="wa-float"
 target="_blank">
 
-<i class="fab fa-whatsapp"></i>
+💬
 
 </a>
 
-<!-- =========================================================
-SECTION INFO
-========================================================= -->
+<!-- =========================================
+INFO GRID
+========================================= -->
+
+<div class="modern-section">
 
 <div class="info-grid">
 
@@ -651,8 +1056,8 @@ SECTION INFO
 <p>
 PAUD-KB ASSYIFA' BRUMBUNG
 merupakan lembaga pendidikan
-anak usia dini islami yang kreatif,
-menyenangkan dan berakhlak mulia.
+anak usia dini islami,
+kreatif dan menyenangkan.
 </p>
 
 <a href="#" class="btn-modern">
@@ -668,7 +1073,7 @@ Selengkapnya
 <p>
 Senin - Kamis<br>
 07.30 - 10.30 WIB<br>
-Belajar Aktif & Kreatif
+Belajar Kreatif Islami
 </p>
 
 <a href="#" class="btn-modern">
@@ -697,8 +1102,8 @@ Lihat Pengumuman
 <h3>🧒 PPDB Online</h3>
 
 <p>
-Pendaftaran peserta didik baru
-tahun ajaran 2025/2026.
+Pendaftaran peserta didik
+baru tahun ajaran 2025.
 </p>
 
 <a href="#" class="btn-modern">
@@ -709,35 +1114,18 @@ Daftar Sekarang
 
 </div>
 
-<!-- =========================================================
-GALERI
-========================================================= -->
-
-<div class="section">
-
-<div class="section-title">
-📸 Galeri Kegiatan
 </div>
 
-<div class="gallery">
-
-<img src="galeri1.jpg">
-<img src="galeri2.jpg">
-<img src="galeri3.jpg">
-<img src="galeri4.jpg">
-
-</div>
-
-</div>
-
-<!-- =========================================================
+<!-- =========================================
 GURU
-========================================================= -->
+========================================= -->
 
-<div class="section">
+<div class="modern-section">
 
-<div class="section-title">
+<div class="modern-title">
+
 👩‍🏫 Guru & Tenaga Pendidik
+
 </div>
 
 <div class="teacher-grid">
@@ -776,32 +1164,46 @@ GURU
 
 </div>
 
-<!-- =========================================================
+<!-- =========================================
 PRESTASI
-========================================================= -->
+========================================= -->
 
-<div class="section">
+<div class="modern-section">
 
-<div class="section-title">
+<div class="modern-title">
+
 🏆 Prestasi Sekolah
+
 </div>
 
-<p>
-🏅 Juara 1 Mewarnai Tingkat Kecamatan<br><br>
-🏅 Juara Hafalan Doa Harian<br><br>
+<ul class="prestasi">
+
+<li>
+🏅 Juara 1 Mewarnai Tingkat Kecamatan
+</li>
+
+<li>
+🏅 Juara Hafalan Doa Harian
+</li>
+
+<li>
 🏅 Juara Favorit Drumband Anak
-</p>
+</li>
+
+</ul>
 
 </div>
 
-<!-- =========================================================
+<!-- =========================================
 MAPS
-========================================================= -->
+========================================= -->
 
-<div class="section">
+<div class="modern-section">
 
-<div class="section-title">
+<div class="modern-title">
+
 📍 Lokasi Sekolah
+
 </div>
 
 <div class="map">
@@ -813,122 +1215,14 @@ src="https://maps.google.com/maps?q=brumbung%20jepon%20blora&t=&z=13&ie=UTF8&iwl
 </div>
 
 </div>
-
-<!-- =========================================================
-FOOTER
-========================================================= -->
-
-<footer>
-
-<div class="footer-grid">
-
-<div>
-
-<div class="footer-title">
-Tentang Kami
-</div>
-
-<p>
-PAUD-KB ASSYIFA'
-memberikan pendidikan terbaik
-untuk anak usia dini.
-</p>
-
-</div>
-
-<div>
-
-<div class="footer-title">
-Menu Cepat
-</div>
-
-<a href="#" class="footer-link">
-Beranda
-</a>
-
-<a href="#" class="footer-link">
-Profil
-</a>
-
-<a href="#" class="footer-link">
-Galeri
-</a>
-
-<a href="#" class="footer-link">
-PPDB
-</a>
-
-</div>
-
-<div>
-
-<div class="footer-title">
-Kontak
-</div>
-
-<p>
-📍 Desa Brumbung<br>
-📞 082313744454<br>
-✉️ pkbassyifa@gmail.com
-</p>
-
-</div>
-
-<div>
-
-<div class="footer-title">
-Ikuti Kami
-</div>
-
-<div class="social-icons">
-
-<a href="#">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="#">
-<i class="fab fa-youtube"></i>
-</a>
-
-<a href="#">
-<i class="fab fa-facebook"></i>
-</a>
-
-<a href="#">
-<i class="fab fa-tiktok"></i>
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="copyright">
-
-Copyright © 2026
-PAUD-KB ASSYIFA' BRUMBUNG
-
-</div>
-
+  
 </footer>
+
+</div>
 
 <script>
 
-/* =========================================================
-LOADER
-========================================================= */
-
-window.addEventListener("load",function(){
-
-document.getElementById("loader")
-.style.display="none";
-
-});
-
-/* =========================================================
-CLOCK
-========================================================= */
+/* JAM */
 
 function updateClock(){
 
@@ -938,7 +1232,7 @@ const jam =
 now.toLocaleTimeString('id-ID');
 
 document.getElementById('clock')
-.innerHTML='🕒 '+jam;
+.innerHTML = '🕒 ' + jam;
 
 }
 
@@ -946,44 +1240,34 @@ setInterval(updateClock,1000);
 
 updateClock();
 
-/* =========================================================
-MUSIC
-========================================================= */
+/* MUSIK */
 
 function playMusic(){
 
-const music=
+const music =
 document.getElementById("bgMusic");
 
 music.play();
 
 }
 
-/* =========================================================
-AUTO MUSIC
-========================================================= */
+/* AUTO PLAY */
 
-window.addEventListener("click",()=>{
+window.addEventListener("click", () => {
 
-const music=
+const music =
 document.getElementById("bgMusic");
 
-if(music){
+music.play().catch(() => {});
 
-music.play().catch(()=>{});
+}, { once:true });
 
-}
+/* INTRO LOGO */
 
-},{once:true});
-
-/* =========================================================
-INTRO LOGO
-========================================================= */
-
-const mainLogo=
+const mainLogo =
 document.getElementById("mainLogo");
 
-const intros=[
+const intros = [
 
 document.getElementById("intro1"),
 document.getElementById("intro2"),
@@ -991,11 +1275,9 @@ document.getElementById("intro3")
 
 ];
 
-let currentIntro=0;
+let currentIntro = 0;
 
 function showIntro(){
-
-if(!mainLogo) return;
 
 mainLogo.classList.add("hide-main");
 
@@ -1011,9 +1293,9 @@ mainLogo.classList.remove("hide-main");
 
 currentIntro++;
 
-if(currentIntro>=intros.length){
+if(currentIntro >= intros.length){
 
-currentIntro=0;
+currentIntro = 0;
 
 }
 
@@ -1024,3 +1306,38 @@ currentIntro=0;
 setInterval(showIntro,10000);
 
 </script>
+
+  <script>
+
+/* =========================================
+LOADER
+========================================= */
+
+window.addEventListener("load",function(){
+
+document.getElementById("loader")
+.style.display="none";
+
+});
+
+/* =========================================
+AUTO MUSIC
+========================================= */
+
+window.addEventListener("click",()=>{
+
+const music=
+document.getElementById("bgMusic");
+
+if(music){
+
+music.play().catch(()=>{});
+
+}
+
+},{once:true});
+
+</script>
+  
+</body>
+</html>
